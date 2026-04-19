@@ -1,0 +1,15 @@
+﻿block_id,block_name,topic_id,source_type,source_name,description,is_active
+b001,Текст о Месси,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Текст о Месси»,true
+b002,Новые слова апрель,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Новые слова апрель»,true
+b003,Lola Lago 5,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Lola Lago 5»,true
+b004,Lola lago 4,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Lola lago 4»,true
+b005,Lola Lago 3,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Lola Lago 3»,true
+b006,Lola Lago 2,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Lola Lago 2»,true
+b007,Lola Lago 1,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Lola Lago 1»,true
+b008,Unit 2,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Unit 2»,true
+b009,Одежда,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Одежда»,true
+b010,Глаголы,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Глаголы»,true
+b011,Наречия места,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Наречия места»,true
+b012,Выражения estar,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Выражения estar»,true
+b013,Профессии,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Профессии»,true
+b014,Выражения,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Выражения»,true

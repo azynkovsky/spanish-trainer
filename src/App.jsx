@@ -378,6 +378,57 @@ export default function App() {
     }
   }, []);
 
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadBundledLibrary() {
+      const files = [
+        ['topics', '/data/topics.csv'],
+        ['blocks', '/data/blocks.csv'],
+        ['block_items', '/data/block_items.csv'],
+        ['vocabulary', '/data/vocabulary.csv'],
+        ['grammar', '/data/grammar_tasks.csv'],
+        ['open', '/data/open_tasks.csv'],
+      ];
+
+      try {
+        const results = await Promise.all(
+          files.map(async ([kind, url]) => {
+            const response = await fetch(url, { cache: 'no-store' });
+            if (!response.ok) return [kind, null];
+            const text = await response.text();
+            return [kind, parseCSV(text)];
+          })
+        );
+
+        if (cancelled) return;
+
+        for (const [kind, rows] of results) {
+          if (!rows || !rows.length) continue;
+          if (kind === 'topics') {
+            setTopics(rows);
+            if (rows[0]?.topic_id) setSelectedTopicId((prev) => prev || rows[0].topic_id);
+          }
+          if (kind === 'blocks') setBlocks(rows);
+          if (kind === 'block_items') setBlockItems(rows);
+          if (kind === 'vocabulary') setVocabulary(rows);
+          if (kind === 'grammar') setGrammarTasks(rows);
+          if (kind === 'open') setOpenTasks(rows);
+        }
+
+        setImportStatus('Встроенная библиотека загружена автоматически.');
+      } catch (error) {
+        if (!cancelled) console.error('Failed to load bundled library', error);
+      }
+    }
+
+    loadBundledLibrary();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   useEffect(() => {
     try {
       localStorage.setItem(
@@ -849,7 +900,7 @@ export default function App() {
                 </div>
                 <div>
                   <CardTitle className="text-2xl">Spanish Trainer</CardTitle>
-                  <CardDescription>Релизная веб-версия с прогрессом, уровнями и календарём</CardDescription>
+                  <CardDescription>Релизная веб-версия с встроенной библиотекой, прогрессом и календарём</CardDescription>
                 </div>
               </div>
             </CardHeader>
@@ -985,7 +1036,7 @@ export default function App() {
               <div className="space-y-3 rounded-2xl bg-slate-100 p-4">
                 <div className="text-sm font-medium text-slate-700">Импорт библиотеки</div>
                 <div className="rounded-2xl border border-dashed p-3 text-sm text-slate-600">
-                  Для боевого использования загрузи свои CSV: topics, blocks, block_items, vocabulary, grammar_tasks и open_tasks. Прогресс хранится локально в браузере.
+                  Библиотека загружается автоматически из сайта. Кнопки ниже нужны только если ты хочешь вручную заменить данные своими CSV. Прогресс пока хранится локально в браузере.
                 </div>
                 <div className="grid gap-2">
                   <input ref={topicInputRef} type="file" accept=".csv" className="hidden" onChange={(e) => handleFileImport(e, 'topics')} />
