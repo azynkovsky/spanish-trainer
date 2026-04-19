@@ -337,6 +337,7 @@ export default function App() {
   const [authLoading, setAuthLoading] = useState(true);
   const [cloudStatus, setCloudStatus] = useState('Локальный режим');
   const [cloudHydrated, setCloudHydrated] = useState(false);
+  const [cloudUpdatedAt, setCloudUpdatedAt] = useState(null);
 
   const [stats, setStats] = useState({ total: 0, correct: 0, wrong: 0, streak: 0 });
   const [mistakes, setMistakes] = useState([]);
@@ -411,6 +412,7 @@ export default function App() {
       setCloudStatus(session?.user ? 'Аккаунт подключён' : 'Локальный режим');
       if (!session?.user) {
         setCloudHydrated(false);
+        setCloudUpdatedAt(null);
       }
     });
 
@@ -420,68 +422,93 @@ export default function App() {
     };
   }, []);
 
-  useEffect(() => {
-    let cancelled = false;
+  async function syncCloudProgress(syncMode = 'manual') {
+    if (!user) return;
 
-    async function loadCloudProgress() {
-      if (!user) return;
+    const loadingText =
+      syncMode === 'focus'
+        ? 'Проверяем облачный прогресс...'
+        : syncMode === 'auto'
+        ? 'Синхронизируем облачный прогресс...'
+        : 'Загружаем облачный прогресс...';
 
-      setCloudStatus('Загружаем облачный прогресс...');
-      const { data, error } = await supabase
-        .from('user_progress')
-        .select('*')
-        .eq('user_id', user.id)
-        .maybeSingle();
+    setCloudStatus(loadingText);
 
-      if (cancelled) return;
+    const { data, error } = await supabase
+      .from('user_progress')
+      .select('*')
+      .eq('user_id', user.id)
+      .maybeSingle();
 
-      if (error) {
-        console.error('Failed to load cloud progress', error);
-        setCloudStatus('Ошибка загрузки облачного прогресса');
-        setCloudHydrated(true);
-        return;
-      }
-
-      if (data) {
-        setStats(data.stats || { total: 0, correct: 0, wrong: 0, streak: 0 });
-        setDailyStats(data.daily_stats || {});
-        setItemProgress(data.item_progress || {});
-        setBlockProgress(data.block_progress || {});
-        setGrammarProgress(data.grammar_progress || {});
-        setArchivedItems(data.archived_items || {});
-        setMistakes(data.mistakes || []);
-        setCloudStatus('Облачный прогресс загружен');
-      } else {
-        const payload = {
-          user_id: user.id,
-          stats,
-          daily_stats: dailyStats,
-          item_progress: itemProgress,
-          block_progress: blockProgress,
-          grammar_progress: grammarProgress,
-          archived_items: archivedItems,
-          mistakes,
-          updated_at: new Date().toISOString(),
-        };
-
-        const { error: insertError } = await supabase.from('user_progress').upsert(payload);
-        if (insertError) {
-          console.error('Failed to create cloud progress row', insertError);
-          setCloudStatus('Ошибка создания облачного прогресса');
-        } else {
-          setCloudStatus('Облачный прогресс создан');
-        }
-      }
-
+    if (error) {
+      console.error('Failed to load cloud progress', error);
+      setCloudStatus('Ошибка загрузки облачного прогресса');
       setCloudHydrated(true);
+      return;
     }
 
-    loadCloudProgress();
+    if (data) {
+      setStats(data.stats || { total: 0, correct: 0, wrong: 0, streak: 0 });
+      setDailyStats(data.daily_stats || {});
+      setItemProgress(data.item_progress || {});
+      setBlockProgress(data.block_progress || {});
+      setGrammarProgress(data.grammar_progress || {});
+      setArchivedItems(data.archived_items || {});
+      setMistakes(data.mistakes || []);
+      setCloudUpdatedAt(data.updated_at || new Date().toISOString());
+      setCloudStatus(syncMode === 'focus' ? 'Прогресс обновлён из облака' : 'Облачный прогресс загружен');
+    } else {
+      const payload = {
+        user_id: user.id,
+        stats,
+        daily_stats: dailyStats,
+        item_progress: itemProgress,
+        block_progress: blockProgress,
+        grammar_progress: grammarProgress,
+        archived_items: archivedItems,
+        mistakes,
+        updated_at: new Date().toISOString(),
+      };
+
+      const { error: insertError } = await supabase.from('user_progress').upsert(payload);
+      if (insertError) {
+        console.error('Failed to create cloud progress row', insertError);
+        setCloudStatus('Ошибка создания облачного прогресса');
+      } else {
+        setCloudUpdatedAt(payload.updated_at);
+        setCloudStatus('Облачный прогресс создан');
+      }
+    }
+
+    setCloudHydrated(true);
+  }
+
+  useEffect(() => {
+    if (!user) return;
+    syncCloudProgress('auto');
+  }, [user]);
+
+  useEffect(() => {
+    if (!user || !cloudHydrated) return;
+
+    function handleVisibilitySync() {
+      if (document.visibilityState === 'visible') {
+        syncCloudProgress('focus');
+      }
+    }
+
+    function handleWindowFocus() {
+      syncCloudProgress('focus');
+    }
+
+    window.addEventListener('focus', handleWindowFocus);
+    document.addEventListener('visibilitychange', handleVisibilitySync);
 
     return () => {
-      cancelled = true;
+      window.removeEventListener('focus', handleWindowFocus);
+      document.removeEventListener('visibilitychange', handleVisibilitySync);
     };
-  }, [user]);
+  }, [user, cloudHydrated]);
 
   useEffect(() => {
     if (!user || !cloudHydrated) return;
@@ -509,6 +536,7 @@ export default function App() {
         console.error('Failed to save cloud progress', error);
         setCloudStatus('Ошибка сохранения в облако');
       } else {
+        setCloudUpdatedAt(payload.updated_at);
         setCloudStatus('Облачный прогресс сохранён');
       }
     }, 800);
@@ -967,6 +995,7 @@ export default function App() {
       console.error('Failed to sign out', error);
       setCloudStatus('Ошибка выхода');
     } else {
+      setCloudUpdatedAt(null);
       setCloudStatus('Выход выполнен');
     }
   }
@@ -1216,7 +1245,13 @@ export default function App() {
                     <div className="rounded-2xl border bg-white p-3 text-sm text-slate-700">
                       <div className="font-medium text-slate-900">{user.email}</div>
                       <div className="mt-1 text-xs text-slate-500">{cloudStatus}</div>
+                      <div className="mt-1 text-[11px] text-slate-400">
+                        Последняя синхронизация: {cloudUpdatedAt ? new Date(cloudUpdatedAt).toLocaleString() : '—'}
+                      </div>
                     </div>
+                    <Button variant="outline" className="w-full justify-start rounded-2xl" onClick={() => syncCloudProgress('manual')}>
+                      Синхронизировать сейчас
+                    </Button>
                     <Button variant="outline" className="w-full justify-start rounded-2xl" onClick={handleLogout}>
                       Выйти из аккаунта
                     </Button>
