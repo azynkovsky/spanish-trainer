@@ -1,0 +1,141 @@
+﻿task_id,topic_id,instruction,prompt,keywords_required,keywords_optional,hint,error_explanation,status
+o0001,ser_estar,"Напиши 1 предложение о том, где ты сейчас.",Используй estar + место.,estoy|está|estamos,,Estoy en casa ahora.,Нужно показать местоположение через estar.,active
+o0002,ser_estar,Напиши 1 предложение о своём обычном качестве.,Используй ser.,soy|es|somos,,Soy una persona tranquila.,Нужно описать постоянную характеристику через ser.,active
+o0003,ser_estar,Опиши своё состояние сегодня одним предложением.,Используй estar + прилагательное.,estoy|está|estamos,,Hoy estoy cansado pero motivado.,Нужно показать временное состояние через estar.,active
+o0004,ser_estar,Напиши предложение о профессии или роли человека.,Используй ser.,soy|es|somos,,Mi hermana es médica.,Профессия и роль обычно требуют ser.,active
+o0005,ser_estar,"Напиши, где находится какой-то предмет.",Используй estar.,está|están,,El libro está sobre la mesa.,Нужно показать местоположение предмета.,active
+o0006,ser_estar,Напиши 1 предложение о национальности или происхождении.,Используй ser.,soy|eres|es|somos|son,,Soy de Rusia.,Происхождение и национальность требуют ser.,active
+o0007,ser_estar,Напиши предложение про настроение сегодня.,Используй estar.,estoy|está,,Hoy estoy de buen humor.,Настроение — это временное состояние.,active
+o0008,ser_estar,Опиши человека одним постоянным качеством.,Используй ser + прилагательное.,es|soy|son,,Mi amigo es muy amable.,Постоянная черта требует ser.,active
+o0009,ser_estar,Напиши предложение о готовности что-то сделать.,Используй estar listo/lista.,estoy|está|estamos,,Estoy listo para salir.,Готовность выражается через estar.,active
+o0010,ser_estar,"Опиши, какой предмет по материалу.",Используй ser de ...,es|son,,La mesa es de madera.,Материал — это ser.,active
+o0011,ser_estar,"Напиши, где сейчас твой телефон.",Используй estar.,está,,Mi teléfono está en mi mochila.,Нужно указать местоположение.,active
+o0012,ser_estar,"Напиши, какой ты обычно, но не сегодня.",Используй ser.,soy,,Soy una persona organizada.,Нужно показать постоянное качество.,active
+o0013,ser_estar,"Напиши 1 предложение о том, каким кто-то является сегодня.",Используй estar + прилагательное.,está|estoy,,Mi hermano está nervioso hoy.,Сегодняшнее состояние требует estar.,active
+o0014,ser_estar,Напиши 1 предложение о семейной связи.,Используй ser.,es|son,,Ana es mi prima.,Идентификация требует ser.,active
+o0015,ser_estar,"Напиши, где сейчас находятся твои друзья.",Используй están.,están,,Mis amigos están en el centro.,Местоположение группы — estar.,active
+o0016,ser_estar,"Сравни: какой ты обычно и какой сегодня, в одном предложении.","Используй и ser, и estar.",soy|estoy,,"Normalmente soy tranquilo, pero hoy estoy nervioso.",Нужно использовать оба глагола по назначению.,active
+o0017,ser_estar,"Напиши, где проходит занятие.",Используй estar.,está|están,,La clase está en el aula 3.,Нужно указать место.,active
+o0018,ser_estar,Напиши 1 предложение о важной характеристике человека.,Используй ser.,es|soy,,Mi abuelo es muy sabio.,Постоянная характеристика — ser.,active
+o0019,ser_estar,Напиши предложение о состоянии еды или напитка.,Используй estar.,está,,El café está muy caliente.,Состояние еды и напитков обычно через estar.,active
+o0020,ser_estar,Напиши 2 коротких части: где ты сейчас и какой ты обычно.,Используй ser и estar.,soy|estoy,,Estoy en casa y soy bastante disciplinado.,Нужно показать разницу между ser и estar.,active
+o0021,preterito_perfecto,"Напиши, что ты уже сделал сегодня.",Используй Pretérito Perfecto.,he|has|ha|hemos|han,,Hoy he trabajado mucho.,"Нужно показать действие, связанное с сегодняшним днём.",active
+o0022,preterito_perfecto,"Напиши 1 предложение о том, что ты уже поел сегодня.",Используй ya.,he|has|ha|hemos|han|ya,,Ya he comido.,Perfecto хорошо сочетается с ya.,active
+o0023,preterito_perfecto,"Напиши, что ты ещё не сделал сегодня.",Используй todavía no.,he|has|ha|hemos|han,,Todavía no he terminado mi trabajo.,Нужно показать незавершённость в текущем периоде.,active
+o0024,preterito_perfecto,Напиши 1 предложение о своём сегодняшнем опыте.,Используй hoy.,he|has|ha|hemos|han,,Hoy he hablado con mi profesor.,Сегодня — типичный контекст для perfecto.,active
+o0025,preterito_perfecto,"Напиши, что ты уже посмотрел / прочитал на этой неделе.",Используй esta semana.,he|has|ha|hemos|han,,Esta semana he leído dos artículos.,Текущая неделя обычно требует perfecto.,active
+o0026,preterito_perfecto,Напиши вопрос: ты уже сделал ...?,Используй has ... ya.,has|ya,,¿Has hecho la tarea ya?,Нужно составить вопрос в perfecto.,active
+o0027,preterito_perfecto,"Напиши, что ты никогда не пробовал.",Используй nunca he ...,he|nunca,,Nunca he probado pulpo.,Опыт до настоящего момента часто выражается perfecto.,active
+o0028,preterito_perfecto,"Напиши, что ты уже узнал сегодня.",Используй haber + participio.,he|has|ha|hemos|han,,Hoy he aprendido una palabra nueva.,Нужно использовать perfecto.,active
+o0029,preterito_perfecto,"Напиши про результат, который важен сейчас.",Используй perfecto.,he|has|ha|hemos|han,,He perdido las llaves.,Результат всё ещё важен в настоящем.,active
+o0030,preterito_perfecto,"Напиши, что ты уже сделал утром / днём / вечером.",Используй hoy / esta mañana.,he|has|ha|hemos|han,,Esta mañana he escrito tres mensajes.,Текущий период дня подходит для perfecto.,active
+o0031,preterito_perfecto,"Напиши, что ты уже открыл / закрыл / подготовил.",Используй perfecto.,he|has|ha|hemos|han,,He abierto la ventana.,Нужно показать завершённое действие с актуальным результатом.,active
+o0032,preterito_perfecto,"Напиши про разговор, который уже произошёл сегодня.",Используй hablar.,he|has|ha|hemos|han,,Hoy he hablado con mi madre.,Сегодняшний разговор лучше в perfecto.,active
+o0033,preterito_perfecto,"Напиши, что ты уже закончил.",Используй terminar.,he|has|ha|hemos|han,,Ya he terminado el ejercicio.,Нужно показать уже завершённое действие.,active
+o0034,preterito_perfecto,"Напиши о книге или фильме, который ты уже видел / читал.",Используй perfecto.,he|has|ha|hemos|han,,He visto esa película tres veces.,Опыт и повторяемость до настоящего момента — perfecto.,active
+o0035,preterito_perfecto,Напиши отрицательное предложение в perfecto.,Используй no he / no ha и т.д.,he|has|ha|hemos|han|no,,No he encontrado la respuesta.,Нужно отрицание в perfecto.,active
+o0036,preterito_perfecto,"Напиши, чему ты научился сегодня.",Используй aprender.,he|has|ha|hemos|han,,Hoy he aprendido una expresión nueva.,Сегодняшний результат — perfecto.,active
+o0037,preterito_perfecto,"Напиши о том, что уже произошло в этом месяце.",Используй este mes.,he|has|ha|hemos|han,,Este mes he trabajado mucho.,Текущий месяц тянет perfecto.,active
+o0038,preterito_perfecto,Напиши 1 предложение с неправильным participio.,"Например: hecho, visto, escrito.",he|has|ha|hemos|han,,He hecho mucho hoy.,Нужно закрепить неправильные participios.,active
+o0039,preterito_perfecto,"Напиши, что ты уже сказал / написал сегодня.",Используй decir / escribir.,he|has|ha|hemos|han,,Hoy he escrito dos correos.,Сегодняшнее действие — perfecto.,active
+o0040,preterito_perfecto,"Сделай 1 фразу о том, что ты уже успел сделать к этому моменту.",Используй perfecto.,he|has|ha|hemos|han,,Ya he terminado casi todo.,Нужно показать связь с настоящим моментом.,active
+o0041,preterito_indefinido,"Напиши, что ты сделал вчера.",Используй Pretérito Indefinido.,fui|hice|vi|comí|llegué|estuve,,Ayer fui al cine.,Вчера — типичный контекст для indefinido.,active
+o0042,preterito_indefinido,Напиши 1 предложение о прошлом выходном.,Используй el domingo / el sábado.,fui|estuve|vi|hice,,El domingo estuve en casa.,Завершённый день требует indefinido.,active
+o0043,preterito_indefinido,"Напиши, что ты сделал в прошлом году.",Используй el año pasado.,fui|estuve|hice|trabajé,,El año pasado viajé mucho.,Завершённый период в прошлом требует indefinido.,active
+o0044,preterito_indefinido,"Напиши, что ты увидел или услышал вчера.",Используй indefinido.,vi|oí|escuché,,Ayer vi una película.,Нужно показать однократное завершённое действие.,active
+o0045,preterito_indefinido,"Напиши, куда ты ходил вчера.",Используй ir в indefinido.,fui,,Ayer fui al supermercado.,Форма fui часто нужна для завершённого действия в прошлом.,active
+o0046,preterito_indefinido,"Напиши, что ты сделал прошлой ночью.",Используй anoche.,fui|vi|comí|escribí,,Anoche escribí un mensaje largo.,anoche требует indefinido.,active
+o0047,preterito_indefinido,"Напиши, что ты сделал в конкретный день недели.",Используй lunes / martes и т.д.,fui|hice|vi|trabajé,,El lunes trabajé desde casa.,Конкретный день в прошлом — indefinido.,active
+o0048,preterito_indefinido,Напиши 1 предложение с hacer в indefinido.,Используй hice / hizo.,hice|hizo,,Ayer hice la tarea.,Нужно закрепить неправильную форму indefinido.,active
+o0049,preterito_indefinido,Напиши 1 предложение с estar в indefinido.,Используй estuve / estuvo.,estuve|estuvo,,La semana pasada estuve enfermo.,Завершённое состояние в прошлом — indefinido.,active
+o0050,preterito_indefinido,Напиши про завершённое прошлое событие.,Используй indefinido.,fui|llegué|terminé|decidí,,Ayer terminé el libro.,"Нужно показать факт, который завершился в прошлом.",active
+o0051,preterito_indefinido,"Напиши, что кто-то сказал или решил.",Используй decir / decidir в прошлом.,dije|dijo|decidí|decidió,,Mi profesor dijo algo importante.,Подходит для однократного завершённого действия.,active
+o0052,preterito_indefinido,"Напиши, где ты был в прошлом месяце.",Используй el mes pasado.,estuve|fui,,El mes pasado estuve en Valencia.,Завершённый месяц — indefinido.,active
+o0053,preterito_indefinido,"Напиши, что ты начал или закончил вчера.",Используй empezar / terminar.,empecé|terminé,,Ayer terminé un artículo.,Нужно показать завершённое действие.,active
+o0054,preterito_indefinido,Напиши 1 предложение с venir / tener / poder в indefinido.,Используй неправильную форму.,vine|tuve|pude,,Ayer pude descansar.,Нужно закрепить неправильные формы indefinido.,active
+o0055,preterito_indefinido,"Напиши, что произошло в 2024 году.",Используй en 2024.,fui|hice|trabajé|aprendí,,En 2024 aprendí mucho.,Конкретный год — indefinido.,active
+o0056,preterito_indefinido,"Напиши, что ты написал вчера вечером.",Используй escribir.,escribí,,Anoche escribí a un amigo.,Вчера вечером — indefinido.,active
+o0057,preterito_indefinido,Напиши 1 предложение с leer / abrir / salir в indefinido.,Используй правильную форму.,leí|abrí|salí,,Ayer salí tarde del trabajo.,Нужно показать завершённое действие.,active
+o0058,preterito_indefinido,"Напиши, когда ты родился или откуда приехал кто-то.",Используй indefinido.,nací|nació|vino,,Nací en 1994.,Рождение и конкретный факт в прошлом — indefinido.,active
+o0059,preterito_indefinido,"Напиши про поездку или событие, которое уже закончено.",Используй indefinido.,fui|viajé|vi|estuve,,El verano pasado viajé a Madrid.,Завершённая поездка — indefinido.,active
+o0060,preterito_indefinido,Сделай короткое предложение про вчера и добавь одно обстоятельство времени.,Используй ayer / anoche / el lunes.,ayer|anoche|lunes|martes,,Ayer trabajé hasta tarde.,Нужно показать явный маркер завершённого прошлого.,active
+o0061,perfecto_vs_indefinido,"Напиши 2 коротких предложения: одно про сегодня, одно про вчера.","Одно в perfecto, одно в indefinido.",he|has|ha|ayer|fui|hice,,Hoy he trabajado mucho y ayer fui al cine.,Нужно различить текущий и завершённый период.,active
+o0062,perfecto_vs_indefinido,"Сравни, что ты сделал сегодня и что сделал вчера.",Используй оба времени.,he|has|ha|ayer|fui|hice,,Hoy he estudiado español y ayer estudié inglés.,"Сегодня часто требует perfecto, вчера — indefinido.",active
+o0063,perfecto_vs_indefinido,Напиши 1 предложение про опыт в жизни и 1 про конкретный момент.,Используй perfecto и indefinido.,he|has|ha|fui|vi|probé,,"Nunca he probado pulpo, pero lo probé en 2023.",Нужно противопоставить опыт и конкретное прошлое.,active
+o0064,perfecto_vs_indefinido,Сделай фразу с hoy и ayer.,Используй разные времена.,hoy|ayer|he|fui|hice,,"Hoy he trabajado mucho, pero ayer descansé.",Сегодня и вчера требуют разных времён.,active
+o0065,perfecto_vs_indefinido,Напиши 1 предложение с esta semana и 1 с la semana pasada.,Используй perfecto и indefinido.,hemos|he|vimos|fui,,Esta semana he leído mucho y la semana pasada terminé un libro.,Текущая неделя и завершённая неделя требуют разных времён.,active
+o0066,perfecto_vs_indefinido,"Напиши, что ты уже сделал сегодня, но не сделал вчера.",Используй perfecto и indefinido.,he|has|ha|ayer,,"Hoy he ido al gimnasio, pero ayer no fui.",Нужно различить hoy и ayer.,active
+o0067,perfecto_vs_indefinido,Напиши 2 фразы: Nunca he... / En 2024...,Используй perfecto и indefinido.,he|2024|fui|hice|vi,,Nunca he estado en Perú. En 2024 viajé a Colombia.,Опыт и конкретный год требуют разных времён.,active
+o0068,perfecto_vs_indefinido,Сравни: este mes и el mes pasado.,Используй 2 времени.,he|has|ha|fui|hice|vi,,Este mes he trabajado mucho y el mes pasado viajé.,Текущий и завершённый месяц отличаются.,active
+o0069,perfecto_vs_indefinido,Напиши 1 вопрос про опыт и 1 утверждение про конкретный факт.,Используй оба времени.,has|alguna vez|fui|vi|hice,,¿Has estado alguna vez en Sevilla? Yo fui en 2022.,Нужно различить опыт и конкретный факт.,active
+o0070,perfecto_vs_indefinido,"Напиши, что ты делал сегодня утром и вчера вечером.",Используй 2 времени.,he|ayer|anoche|fui|hice,,Esta mañana he escrito un correo y anoche vi una serie.,Текущий и завершённый период требуют разных форм.,active
+o0071,perfecto_vs_indefinido,Сделай 2 предложения с ya и el año pasado.,Используй perfecto и indefinido.,ya|he|fui|hice,,Ya he terminado la tarea. El año pasado viví en Madrid.,"ya тянет perfecto, прошлый год — indefinido.",active
+o0072,perfecto_vs_indefinido,Напиши о книге: ты её уже читал и когда именно закончил.,Используй оба времени.,he|terminé|leí,,He leído ese libro y lo terminé en enero.,Нужно соединить общий опыт и конкретный момент.,active
+o0073,perfecto_vs_indefinido,Напиши 2 предложения с esta tarde и ayer por la tarde.,Используй оба времени.,he|ayer|fui|hice,,Esta tarde he hablado con Ana y ayer por la tarde trabajé.,Нужно различить незавершённый и завершённый период.,active
+o0074,perfecto_vs_indefinido,Напиши про разговор: уже говорил сегодня и поговорил вчера.,Используй hablar в 2 временах.,he|hablé,,Hoy he hablado con mi madre y ayer hablé con mi jefe.,"Одна ситуация — текущий период, вторая — завершённый.",active
+o0075,perfecto_vs_indefinido,Сделай 2 коротких предложения с nunca и cuando tenía...,Используй оба времени.,he|tenía|probé|vi,,"Nunca he visto esa película, pero cuando tenía 15 años vi otra parecida.",Нужно развести опыт и конкретное прошлое.,active
+o0076,perfecto_vs_indefinido,Напиши о поездке: был ли ты когда-нибудь где-то и где был в конкретном году.,Используй оба времени.,he|fui|estuve,,He estado en España varias veces y en 2022 estuve en Madrid.,"Perfecto для опыта, indefinido для года.",active
+o0077,perfecto_vs_indefinido,Напиши о работе: что уже сделал сегодня и что сделал в прошлую пятницу.,Используй оба времени.,he|viernes|hice|terminé,,Hoy he terminado dos tareas y el viernes pasado terminé un informe.,Нужно различить текущий и завершённый период.,active
+o0078,perfecto_vs_indefinido,Напиши мини-сравнение двух периодов времени.,Используй perfecto и indefinido.,he|fui|hice|vi,,Este año he mejorado mucho y el año pasado estudié menos.,Текущий год и прошлый год требуют разных времён.,active
+o0079,perfecto_vs_indefinido,"Сделай 2 предложения: одно с alguna vez, второе с en 2023.",Используй оба времени.,he|2023|fui|vi|hice,,¿Has probado paella alguna vez? Yo la probé en 2023.,Опыт и конкретный год — разные времена.,active
+o0080,perfecto_vs_indefinido,Напиши про результат сейчас и факт в прошлом.,Используй perfecto и indefinido.,he|fui|hice|vi,,He perdido las llaves y ayer perdí un documento.,Нужно противопоставить актуальный результат и завершённый факт.,active
+o0081,pronombres,Напиши предложение с lo.,Используй прямое дополнение мужского рода.,lo,,Lo veo todos los días.,Нужно использовать lo как прямое дополнение.,active
+o0082,pronombres,Напиши предложение с la.,Используй прямое дополнение женского рода.,la,,La conozco muy bien.,Нужно использовать la как прямое дополнение.,active
+o0083,pronombres,Напиши предложение с le.,Используй косвенное дополнение.,le,,Le escribo una carta a mi madre.,Нужно использовать le как адресата / получателя.,active
+o0084,pronombres,Напиши предложение с me.,Сделай короткую фразу.,me,,Me llama por la tarde.,Нужно использовать me.,active
+o0085,pronombres,Напиши предложение с te.,Сделай короткую фразу.,te,,Te explico la tarea.,Нужно использовать te.,active
+o0086,pronombres,Напиши предложение с nos.,Сделай короткую фразу.,nos,,Nos invitan a la fiesta.,Нужно использовать nos.,active
+o0087,pronombres,Напиши предложение с os.,Используй vosotros.,os,,Os mando un mensaje.,Нужно использовать os.,active
+o0088,pronombres,Напиши предложение с les.,Используй косвенное дополнение во множественном числе.,les,,Les doy las llaves.,Нужно использовать les.,active
+o0089,pronombres,"Напиши 1 предложение с lo и существительным, которое потом заменяешь.","Например, книгу / фильм / телефон.",lo|la|los|las,,Tengo el libro y lo leo ahora.,Нужно показать замену объекта местоимением.,active
+o0090,pronombres,Напиши 1 предложение с le и адресатом.,"Например: маме, другу, преподавателю.",le,,Le mando un correo al profesor.,Нужно показать адресата через le.,active
+o0091,pronombres,Напиши предложение с las.,Используй женский объект во множественном числе.,las,,Las compro mañana.,Нужно использовать las.,active
+o0092,pronombres,Напиши предложение с los.,Используй мужской объект во множественном числе.,los,,Los veo en clase.,Нужно использовать los.,active
+o0093,pronombres,Напиши фразу: я говорю ему правду.,Используй местоимение.,le,,Le digo la verdad.,Нужно использовать косвенное дополнение.,active
+o0094,pronombres,Напиши фразу: я её ищу.,Используй местоимение.,la,,La busco ahora.,Нужно использовать прямое дополнение.,active
+o0095,pronombres,Напиши фразу: они мне звонят.,Используй местоимение.,me,,Me llaman por la tarde.,Нужно использовать me.,active
+o0096,pronombres,"Составь предложение с 2 частями: сначала объект, потом местоимение.",Например: tengo el libro y ...,lo|la|los|las,,Tengo el libro y lo leo esta noche.,Нужно показать замену существительного местоимением.,active
+o0097,pronombres,"Напиши предложение, где ты что-то объясняешь кому-то.",Используй le / les.,le|les,,Les explico la regla a mis amigos.,Нужно использовать косвенное дополнение.,active
+o0098,pronombres,"Напиши предложение, где ты кого-то видишь.",Используй lo/la/los/las.,lo|la|los|las,,La veo en la oficina.,Нужно использовать прямое дополнение.,active
+o0099,pronombres,Напиши 1 короткий вопрос с местоимением.,"Например, с lo / te / me.",lo|la|le|me|te,,¿Lo entiendes?,Нужно встроить местоимение в вопрос.,active
+o0100,pronombres,Напиши 1 естественное предложение с местоимением по теме семьи или друзей.,Используй любой объектный pronombre.,lo|la|le|me|te|nos|os|les,,Le escribo a mi hermana cada semana.,Нужно использовать объектное местоимение по смыслу.,active
+o0101,por_para,Напиши предложение с para для цели.,"Например: учу язык, чтобы ...",para,,Estudio español para viajar.,para часто используется для цели.,active
+o0102,por_para,Напиши предложение с por для причины.,Например: спасибо за ...,por,,Gracias por tu ayuda.,por часто выражает причину.,active
+o0103,por_para,"Сделай 2 коротких предложения: одно с por, одно с para.",Покажи разницу.,por|para,,Trabajo por mi familia y estudio para mejorar.,Нужно различить причину и цель.,active
+o0104,por_para,Напиши предложение с para + срок.,"Например: к пятнице, на завтра.",para,,Necesito el informe para mañana.,para используется для дедлайна.,active
+o0105,por_para,Напиши предложение с por + маршрут / место.,"Например: по парку, через центр.",por,,Caminamos por el parque.,por подходит для движения через место.,active
+o0106,por_para,Напиши предложение с por + благодарность.,Используй gracias por...,por,,Gracias por venir.,Это один из самых частых шаблонов с por.,active
+o0107,por_para,Напиши предложение с para + получатель.,Например: подарок для мамы.,para,,Este regalo es para mi madre.,para часто выражает адресата / получателя.,active
+o0108,por_para,Напиши предложение с por + обмен / цена.,Например: заплатить за что-то.,por,,Pagué diez euros por el libro.,por часто используется с ценой и обменом.,active
+o0109,por_para,"Напиши о том, зачем ты учишь испанский.",Используй para.,para,,Aprendo español para comunicarme mejor.,Нужно показать цель.,active
+o0110,por_para,"Напиши о том, почему ты что-то сделал.",Используй por.,por,,Lo hice por curiosidad.,Нужно показать причину.,active
+o0111,por_para,Напиши предложение с para + направление.,Например: еду в Мадрид.,para,,Salgo para Madrid mañana.,para может показывать направление.,active
+o0112,por_para,Напиши предложение с por + средство связи.,Например: по телефону.,por,,Hablamos por teléfono.,por часто используется с medios.,active
+o0113,por_para,"Сделай мини-сравнение: por = причина, para = цель.",Напиши 2 короткие части.,por|para,,Trabajo por necesidad y estudio para crecer.,Нужно показать смысловую разницу.,active
+o0114,por_para,Напиши предложение с para + человек.,Например: это для тебя.,para,,Esto es para ti.,Нужно использовать para с получателем.,active
+o0115,por_para,Напиши предложение с por + ошибка / случайность.,Например: по ошибке.,por,,Lo hice por error.,por часто используется с причинами такого типа.,active
+o0116,por_para,Напиши 1 фразу с por la mañana / por la tarde.,Используй por.,por,,Trabajo por la mañana.,Нужно использовать временное выражение с por.,active
+o0117,por_para,Напиши 1 предложение о книге / курсе для кого-то.,Используй para.,para,,Este curso es para principiantes.,para = предназначение.,active
+o0118,por_para,"Напиши, ради кого ты работаешь или стараешься.",Используй por.,por,,Trabajo por mi familia.,por может показывать мотив.,active
+o0119,por_para,Напиши предложение с para que.,Сделай простую цель.,para,,Te escribo para que practiques más.,Нужно показать цель через para.,active
+o0120,por_para,"Сделай 2 короткие фразы: одна про цель, одна про причину.",Используй por и para.,por|para,,Corro para sentirme mejor y estudio por interés.,Нужно различить цель и причину.,active
+o0121,numerales,Напиши предложение с числом 21.,Используй существительное.,veintiún|veintiuna,,Tengo veintiún libros.,Нужно правильно согласовать числительное.,active
+o0122,numerales,Напиши предложение с порядковым числительным.,"Например: первый день, третий этаж.",primer|tercer|segundo,,Vivo en el tercer piso.,Нужно использовать порядковое числительное.,active
+o0123,numerales,Напиши свой возраст или любой возраст персонажа.,Используй числительное.,años,,Tengo treinta años.,Нужно использовать числительное в естественной фразе.,active
+o0124,numerales,Напиши предложение с количеством книг / страниц / минут.,Используй любое число.,uno|dos|tres|cuatro|cinco|diez|cien,,He leído cien páginas.,Нужно встроить числительное в естественный контекст.,active
+o0125,numerales,Напиши предложение с ценой.,Используй число и euros.,euros,,Cuesta quince euros.,Нужно использовать количественное числительное.,active
+o0126,numerales,Напиши предложение с датой или годом.,Используй число.,mil|dos mil|veinte|treinta,,Nací en dos mil uno.,Нужно использовать числительное в реальном контексте.,active
+o0127,numerales,Напиши предложение с временем.,"Например: 3 часа, 40 минут.",hora|minutos|horas,,Trabajo durante cuarenta minutos.,Нужно использовать числительное со временем.,active
+o0128,numerales,Напиши предложение с 100 / 101 / 200.,Используй существительное.,cien|ciento|doscientos|doscientas,,Tengo cien euros.,Нужно закрепить формы сотен.,active
+o0129,numerales,Напиши предложение с veintidós или dieciséis.,Используй существительное.,veintidós|dieciséis,,Hay veintidós estudiantes en clase.,Нужно использовать правильную форму числительного.,active
+o0130,numerales,Напиши о количестве людей.,Используй centenas.,quinientas|doscientas|setecientos|novecientos,,Había quinientas personas en el concierto.,Нужно согласовать число и род.,active
+o0131,numerales,"Напиши, на каком этаже ты живёшь / был.",Используй primer / segundo / tercer.,primer|segundo|tercer,,Vivo en el segundo piso.,Нужно использовать порядковое числительное.,active
+o0132,numerales,Напиши предложение с количеством дней / недель / месяцев.,Используй любое число.,días|semanas|meses,,Estudié español durante tres meses.,Нужно встроить числительное в естественную фразу.,active
+o0133,numerales,Напиши предложение с количеством предметов в комнате.,Используй числительное.,uno|dos|tres|cuatro,,En mi mesa hay tres libros.,Нужно использовать числительное с существительным.,active
+o0134,numerales,Напиши предложение с километрами или метрами.,Используй число.,metros|kilómetros,,Caminé cinco kilómetros ayer.,Нужно использовать числительное в контексте расстояния.,active
+o0135,numerales,Напиши предложение с первым / вторым / третьим разом.,Используй порядковое числительное.,primer|segundo|tercer,,Es la primera vez que lo hago.,Нужно использовать порядковое числительное.,active
+o0136,numerales,Напиши предложение с большим числом.,"Например: 300, 500, 900.",trescientos|quinientas|novecientos,,Hay trescientos libros aquí.,Нужно закрепить большие числа.,active
+o0137,numerales,Напиши предложение о количестве упражнений или заданий.,Используй числительное.,uno|dos|diez|veinte,,Hoy hice diez ejercicios.,Нужно встроить число в полезный учебный контекст.,active
+o0138,numerales,Напиши предложение о месте в очереди / списке.,Используй порядковое числительное.,primero|segundo|tercero,,Soy el primero en la fila.,Нужно использовать порядковое числительное.,active
+o0139,numerales,Напиши предложение с количеством часов сна / работы.,Используй числительное.,horas,,Dormí seis horas.,Нужно показать число в бытовом контексте.,active
+o0140,numerales,Напиши любую естественную фразу с числом и существительным.,Главное — корректно согласовать форму.,uno|una|veintiún|veintiuna|cien,,Tengo veintiuna ideas nuevas.,Нужно согласовать числительное с существительным по форме.,active
