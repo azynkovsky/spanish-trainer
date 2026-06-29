@@ -1,0 +1,16 @@
+topic_id,topic_name,topic_type,description,is_active
+general_library,Общая библиотека,mixed,"Все слова, импортированные из Excel-файла",True
+grammar_presente_indicativo,Presente de Indicativo,grammar,Presente de Indicativo,True
+grammar_gustar,Grupo Gustar,grammar,Grupo Gustar,True
+grammar_reflexivos,Pronombres reflexivos,grammar,Pronombres reflexivos,True
+grammar_objeto,Pronombres de objeto,grammar,Pronombres de objeto,True
+grammar_perifrasis,Perífrasis verbales,grammar,Perífrasis verbales,True
+grammar_comparativos,Comparativos,grammar,Comparativos,True
+grammar_indefinidos,Indefinidos,grammar,Indefinidos,True
+grammar_impersonales,Oraciones impersonales,grammar,Oraciones impersonales,True
+grammar_adverbios,Adverbios y comparativos,grammar,Adverbios y comparativos,True
+grammar_demostrativos,Demostrativos,grammar,Demostrativos,True
+grammar_posesivos,Posesivos,grammar,Posesivos,True
+grammar_preposiciones,Preposiciones,grammar,Preposiciones,True
+grammar_conectores,Conectores,grammar,Conectores,True
+grammar_interrogativos,Interrogativos,grammar,Interrogativos,True

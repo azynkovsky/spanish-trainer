@@ -1,0 +1,29 @@
+block_id,block_name,topic_id,source_type,source_name,description,is_active
+b001,Текст о Месси,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Текст о Месси»,True
+b002,Новые слова апрель,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Новые слова апрель»,True
+b003,Lola Lago 5,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Lola Lago 5»,True
+b004,Lola lago 4,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Lola lago 4»,True
+b005,Lola Lago 3,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Lola Lago 3»,True
+b006,Lola Lago 2,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Lola Lago 2»,True
+b007,Lola Lago 1,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Lola Lago 1»,True
+b008,Unit 2,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Unit 2»,True
+b009,Одежда,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Одежда»,True
+b010,Глаголы,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Глаголы»,True
+b011,Наречия места,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Наречия места»,True
+b012,Выражения estar,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Выражения estar»,True
+b013,Профессии,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Профессии»,True
+b014,Выражения,general_library,excel_sheet,Библиотека испанский.xlsx,Импортировано с листа «Выражения»,True
+b015,Presente de Indicativo,grammar_presente_indicativo,csv,grammar_tasks_presente_indicativo_v1.csv,Грамматика: Presente de Indicativo,True
+b016,Grupo Gustar,grammar_gustar,csv,grammar_tasks_gustar_v1.csv,Грамматика: Grupo Gustar,True
+b017,Pronombres reflexivos,grammar_reflexivos,csv,grammar_tasks_reflexivos_v1.csv,Грамматика: Pronombres reflexivos,True
+b018,Pronombres de objeto,grammar_objeto,csv,grammar_tasks_objeto_v1.csv,Грамматика: Pronombres de objeto,True
+b019,Perífrasis verbales,grammar_perifrasis,csv,grammar_tasks_perifrasis_v1.csv,Грамматика: Perífrasis verbales,True
+b020,Comparativos,grammar_comparativos,csv,grammar_tasks_comparativos_v1.csv,Грамматика: Comparativos,True
+b021,Indefinidos,grammar_indefinidos,csv,grammar_tasks_indefinidos_v1.csv,Грамматика: Indefinidos,True
+b022,Oraciones impersonales,grammar_impersonales,csv,grammar_tasks_impersonales_v1.csv,Грамматика: Oraciones impersonales,True
+b023,Adverbios y comparativos,grammar_adverbios,csv,grammar_tasks_adverbios_v1.csv,Грамматика: Adverbios y comparativos,True
+b024,Demostrativos,grammar_demostrativos,csv,grammar_tasks_demostrativos_v1.csv,Грамматика: Demostrativos,True
+b025,Posesivos,grammar_posesivos,csv,grammar_tasks_posesivos_v1.csv,Грамматика: Posesivos,True
+b026,Preposiciones,grammar_preposiciones,csv,grammar_tasks_preposiciones_v1.csv,Грамматика: Preposiciones,True
+b027,Conectores,grammar_conectores,csv,grammar_tasks_conectores_v1.csv,Грамматика: Conectores,True
+b028,Interrogativos,grammar_interrogativos,csv,grammar_tasks_interrogativos_v1.csv,Грамматика: Interrogativos,True
