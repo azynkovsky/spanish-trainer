@@ -1,0 +1,27 @@
+﻿topic_id,topic_name,topic_type,description,is_active
+general_library,Общая библиотека,mixed,"Все слова, импортированные из Excel-файла",True
+grammar_presente_indicativo,Presente de Indicativo,grammar,Presente de Indicativo,True
+grammar_gustar,Grupo Gustar,grammar,Grupo Gustar,True
+grammar_reflexivos,Pronombres reflexivos,grammar,Pronombres reflexivos,True
+grammar_objeto,Pronombres de objeto,grammar,Pronombres de objeto,True
+grammar_perifrasis,Perífrasis verbales,grammar,Perífrasis verbales,True
+grammar_comparativos,Comparativos,grammar,Comparativos,True
+grammar_indefinidos,Indefinidos,grammar,Indefinidos,True
+grammar_impersonales,Oraciones impersonales,grammar,Oraciones impersonales,True
+grammar_adverbios,Adverbios y comparativos,grammar,Adverbios y comparativos,True
+grammar_demostrativos,Demostrativos,grammar,Demostrativos,True
+grammar_posesivos,Posesivos,grammar,Posesivos,True
+grammar_preposiciones,Preposiciones,grammar,Preposiciones,True
+grammar_conectores,Conectores,grammar,Conectores,True
+grammar_interrogativos,Interrogativos,grammar,Interrogativos,True
+body,Части тела,vocabulary,Базовая лексика по теме «Части тела»,True
+family,Семья и родственники,vocabulary,Базовая лексика по теме «Семья»,True
+personality,Характер человека,vocabulary,Базовая лексика по теме «Характер»,True
+appearance,Внешность,vocabulary,Базовая лексика по теме «Внешность»,True
+food_1,Продукты: базовые,vocabulary,Базовая лексика по теме «Продукты»: часть 1,True
+food_2,Продукты: дополнение,vocabulary,Базовая лексика по теме «Продукты»: часть 2,True
+animals,Животные,vocabulary,Базовая лексика по теме «Животные»,True
+colors,Цвета,vocabulary,Базовая лексика по теме «Цвета»,True
+weather,Погода,vocabulary,Базовая лексика по теме «Погода»,True
+city_places,Места в городе,vocabulary,Базовая лексика по теме «Город»,True
+nature,Природные объекты,vocabulary,Базовая лексика по теме «Природа»,True
